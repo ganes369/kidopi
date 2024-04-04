@@ -1,5 +1,6 @@
 <?php
 
+
 class CovidModel {
     private $_url_base;
     private $_pdo;
@@ -7,8 +8,8 @@ class CovidModel {
 
     public function __construct()
     {
-        $this->_url_base = 'https://dev.kidopilabs.com.br/exercicio/covid.php?pais=';
-        $this->_pdo = new PDO('mysql:host=localhost;dbname=kidope', 'root', '');
+        $this->_url_base = $_ENV['URL'];
+        $this->_pdo = new PDO($_ENV['URL_DB'], $_ENV['USER_DB'], $_ENV['PASS_DB']);
     }
 
     public function getData($country) {
