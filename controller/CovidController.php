@@ -1,6 +1,7 @@
 <?php
 
 require "./model/CovidModel.php";
+require "./model/AcessoModel.php";
 
 class CovidController {
     public function index() {
@@ -8,8 +9,12 @@ class CovidController {
     }
 
     public function getData($country) {
-        $model = new CovidModel();
-        $data = $model->getData($country);
+        $covid_model = new CovidModel();
+        $acesso_model = new AcessoModel();
+
+        $data = $covid_model->getData($country);
+        $acesso_model->insertAcess($country);
+
         echo json_encode($data);
     }
 
@@ -20,7 +25,7 @@ class CovidController {
     }
 
     public function getAcesso(){
-        $model = new CovidModel();
+        $model = new AcessoModel();
         echo json_encode($model->getAcesso());
     }
 }
