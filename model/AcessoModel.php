@@ -11,7 +11,7 @@ class AcessoModel {
     }
 
 
-    public function insertAcess($country){
+    public function insertAcess(string $country){
         $this->_stmt = $this->_pdo->prepare("INSERT INTO acessos (data_hora, pais) VALUES (NOW(), :pais)");
         $this->_stmt->execute(array(':pais' => $country));
     }

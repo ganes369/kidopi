@@ -9,7 +9,7 @@ class CovidModel {
         $this->_url_base = $_ENV['URL'];
     }
 
-    public function getData($country) {
+    public function getData(string $country) {
         $url = $this->_url_base . urlencode($country);
         $response = file_get_contents($url);  
 
@@ -19,7 +19,7 @@ class CovidModel {
         
     }
 
-    public function getMortes($country) {
+    public function getMortes(string $country) {
         $url = $this->_url_base . urlencode($country);
     
         $data = json_decode(file_get_contents($url), true);

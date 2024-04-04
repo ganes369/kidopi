@@ -126,7 +126,7 @@
                 .then(data => {
                     var ultimoAcesso = document.getElementById('ultimoAcesso');
                     ultimoAcesso.innerHTML = 'Último acesso: ' + JSON.parse(data).data_hora + ', ' + JSON.parse(data).pais;
-                    hideLoader(); // Esconde o loader após os dados serem carregados
+                 //   hideLoader(); // Esconde o loader após os dados serem carregados
                 })
                 .catch(error => {
                     console.error(error);

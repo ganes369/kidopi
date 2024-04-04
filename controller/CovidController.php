@@ -8,7 +8,7 @@ class CovidController {
         include_once 'view/index.php';
     }
 
-    public function getData($country) {
+    public function getData(string $country) {
         $covid_model = new CovidModel();
         $acesso_model = new AcessoModel();
 
@@ -18,7 +18,7 @@ class CovidController {
         echo json_encode($data);
     }
 
-    public function getMortos($country){
+    public function getMortos(string $country){
         $model = new CovidModel();
         $data = $model->getMortes($country);
         echo json_encode($data);
