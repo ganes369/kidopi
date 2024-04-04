@@ -1,6 +1,6 @@
 # Projeto PHP KIDOPI
 
-Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local e o pacote vlucas/dotenv para recuperar variáveis de ambiente do banco de dados.
+Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local.
 
 ## Requisitos
 
@@ -8,6 +8,11 @@ Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local 
 - XAMPP (ou outro servidor local)
 - Composer
 - Banco de dados (por exemplo, MySQL)
+
+## Rodando o Script do Banco de Dados
+
+1. Certifique-se de que o servidor do banco de dados esteja em execução (por exemplo, MySQL no XAMPP).
+2. Execute o script `Dump.sql` (que está na raiz do projeto) em qualquer servidor MySQL.
 
 ## Configuração
 
@@ -22,26 +27,12 @@ Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local 
    USER_DB=root
    PASS_DB=''
 
-
-   URL=https://dev.kidopilabs.com.br/exercicio/covid.php?pais='
    ```
 
-   Certifique-se de substituir `usuario_do_banco` e `senha_do_banco` pelos valores corretos do seu ambiente.
-
-## Rodando o Script do Banco de Dados
-
-1. Certifique-se de que o servidor do banco de dados esteja em execução (por exemplo, MySQL no XAMPP).
-2. No terminal, navegue até o diretório do projeto.
-3. Execute o seguinte comando para importar o script do banco de dados Dump.sql:
-
-   ```bash
-   mysql -u usuario_do_banco -p nome_do_banco_de_dados < Dump.sql
-   ```
-
-   Substitua `usuario_do_banco` pelo nome de usuário do seu banco de dados e `nome_do_banco_de_dados` pelo nome do banco de dados que você configurou no arquivo `.env`.
+   Certifique-se de substituir `USER_DB` e `PASS_DB` pelos valores corretos do seu ambiente.
 
 ## Uso
 
-http://localhost/kidopi-test/ substitua kidopi-test pelo seu caminho
+http://localhost/kidopi/ substitua kidopi pelo seu caminho
 
 ![Alt text](image.png)
