@@ -26,7 +26,7 @@ Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local 
    URL=https://dev.kidopilabs.com.br/exercicio/covid.php?pais='
    ```
 
-   Certifique-se de substituir `nome_do_banco_de_dados`, `usuario_do_banco` e `senha_do_banco` pelos valores corretos do seu ambiente.
+   Certifique-se de substituir `usuario_do_banco` e `senha_do_banco` pelos valores corretos do seu ambiente.
 
 ## Rodando o Script do Banco de Dados
 
@@ -43,3 +43,5 @@ Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local 
 ## Uso
 
 http://localhost/kidopi-test/ substitua kidopi-test pelo seu caminho
+
+![Alt text](image.png)
