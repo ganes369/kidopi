@@ -33,7 +33,9 @@ Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local.
 
 ## Uso
 
-http://localhost/kidopi/ substitua kidopi pelo seu caminho
+substitua kidopi pelo seu caminho
+
+http://localhost/kidopi/ listar casos confirmados e mortes em país
 
 http://localhost/kidopi?action=paises calcular a media entre paises
 
