@@ -35,4 +35,6 @@ Este é um projeto PHP que utiliza XAMPP como ambiente de desenvolvimento local.
 
 http://localhost/kidopi/ substitua kidopi pelo seu caminho
 
+http://localhost/kidopi?action=paises calcular a media entre paises
+
 ![Alt text](image.png)
