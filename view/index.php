@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,7 +114,6 @@
         }
 
         const lastAccess = () => {
-            showLoader(); // Mostra o loader enquanto os dados estão sendo carregados
             fetch('index.php?action=getAcesso')
                 .then(response => {
                     if (!response.ok) {
