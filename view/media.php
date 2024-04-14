@@ -101,11 +101,11 @@
                         inf.innerHTML = `${text} = <strong>${Number(num)}</strong>`;
                         return
                     } else if (Number(num) > 0) {
-                        const text = `Taxa do ${selectedCountry1} maior do que a do ${selectedCountry2}`
+                        const text = `Taxa do ${selectedCountry1} maior do que a do país ${selectedCountry2}`
                         inf.innerHTML = `${text} = <strong>${Number(num)}</strong>`;
                         return
                     }
-                    const text = `Taxa do ${selectedCountry1} e ${selectedCountry2} são iguais`
+                    const text = `Taxa do país ${selectedCountry1} e do país ${selectedCountry2} são iguais`
                     inf.innerHTML = `${text} = <strong>${Number(num)}</strong>`;
                 }
             }
